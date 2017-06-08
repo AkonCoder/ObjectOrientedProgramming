@@ -15,7 +15,10 @@ namespace WhatOOP
 
         private static void Main(string[] args)
         {
-            SentimentClassify();
+            //SentimentClassify();
+            var result = GenericFunction.Get<string>(2, "2");
+            Console.WriteLine(result.GetType());
+
             Console.ReadKey();
         }
 
