@@ -28,6 +28,8 @@ namespace WhatOOP
             {
                 SimpleLog.Instance.WriteLogForFile("用户反馈情感分析", JsonConvert.SerializeObject(result));
             }
+            
+            Console.WriteLine("执行完毕！");
         }
     }
 }
