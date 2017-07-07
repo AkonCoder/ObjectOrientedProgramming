@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace WhatOOP
 {
@@ -26,11 +27,10 @@ namespace WhatOOP
         }
 
         //正确
-        public class ChildTest<T,TS>: Test<T,TS>
+        public class ChildTest<T, TS> : Test<T, TS>
         {
             public ChildTest(T name, TS age) : base(name, age)
             {
-
             }
         }
 
@@ -40,5 +40,29 @@ namespace WhatOOP
         //public class TestChild : Test<string, int> { }
         //public class TestChild<T, S> : Test<T, S> { }
         //public class TestChild<T, S> : Test<String, int> { } 
+
+        public interface IList<T>
+        {
+            T[] GetElements();
+        }
+
+        public interface IDictionary<K, V>
+        {
+            void Add(K key, V value);
+        }
+
+        // 泛型接口的类型参数要么已实例化  
+        // 要么来源于实现类声明的类型参数  
+        private class Name<T> : IList<T>, IDictionary<int, T>
+        {
+            public T[] GetElements()
+            {
+                return null;
+            }
+
+            public void Add(int index, T value)
+            {
+            }
+        }
     }
 }
