@@ -37,18 +37,22 @@ namespace WhatOOP
             //var userName = "liupeng";
             //运算符+、-、*、/，
 
-            var numOne = 2;
-            var numThree = numOne --;
-            numThree += numOne;
-            numThree = numThree + numOne;
-            numThree -= numOne;
-            numThree = numThree - numOne;
-            //Console.WriteLine(numTwo);
-            Console.WriteLine(numOne);
-            Console.WriteLine(numThree);
+            //var numOne = 2;
+            //var numThree = numOne --;
+            //numThree += numOne;
+            //numThree = numThree + numOne;
+            //numThree -= numOne;
+            //numThree = numThree - numOne;
+            ////Console.WriteLine(numTwo);
+            //Console.WriteLine(numOne);
+            //Console.WriteLine(numThree);
 
 
-            
+            var startDate = Convert.ToDateTime(DateTime.Now.ToShortDateString()).AddDays(-7);
+            var endDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+
+            Console.WriteLine(string.Format("开始日期是：{0}；结束日期是：{1}", startDate, endDate));
+
 
             Console.ReadKey();
         }
