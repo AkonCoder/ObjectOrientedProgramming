@@ -52,6 +52,8 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,9 +64,14 @@
     <Compile Include="DapperHelper.cs" />
     <Compile Include="Generic.cs" />
     <Compile Include="GenericFunction.cs" />
+    <Compile Include="ImageMergeHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaskDailyEntity.cs" />
+    <Compile Include="WaterMark.cs" />
+    <Compile Include="WaterMarkHelper.cs" />
+    <Compile Include="WaterMarkLocationEnum.cs" />
+    <Compile Include="WaterMarkTypeEnum.cs" />
     <Compile Include="WordDeal.cs" />
   </ItemGroup>
   <ItemGroup>
